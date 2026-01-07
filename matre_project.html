@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photo Gallery | Lucky Jan</title>
+	<style>	
+		body {
+			background-color: #ceb5b7;
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		.header {
+			text-align: center;
+			background-color: #FFDFD3;
+			border: 3px solid black;
+			border-radius: 10px;
+			padding: 30px;
+			margin: 20px;
+		}
+
+		.back, .game-link {
+			background-color: #FFDFD3;
+			border: 3px solid black;
+			border-radius: 20px;
+			padding: 15px 30px;
+			margin: 20px auto;
+			text-align: center;
+			width: fit-content;
+			font-weight: bold;
+		}
+
+		.back a, .game-link a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.back a:hover, .game-link a:hover {
+			text-decoration: underline;
+		}
+
+		.game-link img {
+			width: 300px;
+			border: 5px solid black;
+			border-radius: 10px;
+			transition: transform 0.3s ease;
+		}
+
+		.game-link img:hover {
+			transform: scale(1.05);
+		}
+
+		footer {
+			background-color: #FFDFD3;
+			border-top: 3px solid black;
+			text-align: center;
+			padding: 10px;
+			font-weight: bold;
+			margin-top: 40px;
+		}
+	</style>
+</head>
+<body>
+
+	<header class="header">
+		<h1>Project</h1>
+		<p>This is the photo project of Mr. Lucky Jan Matre.</p>
+	</header>
+
+	<main>
+		<div class="game-link">
+			<a href="https://luckyjanmatre.github.io/GAME-FINAL/" target="_blank">
+				<img src="d1857486-ccd5-441c-97a5-5d8266aa32ec.png" alt="Game Thumbnail">
+			</a>
+			<p>Click the image to play the game!</p>
+		</div>
+
+		<div class="back">
+			<a href="index.html">← Go Back to Home</a>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; Lucky Jan Matre 2024.</p>
+	</footer>
+
+</body>
+</html>

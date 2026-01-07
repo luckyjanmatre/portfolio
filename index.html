@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lucky Jan | Portfolio</title>
+	<style>
+		:root {
+			--main-bg: #ceb5b7;
+			--header-bg: #FFDFD3;
+			--box-bg: #ffffff;
+			--text-color: #000000;
+			--accent-color: #ffb6b9;
+		}
+
+		body {
+			background-color: var(--main-bg);
+			margin: 0;
+			font-family: Arial, sans-serif;
+			color: var(--text-color);
+		}
+
+		header {
+			background-color: var(--header-bg);
+			background-image: url('header-bg.jpg'); /* Replace with your image file or use URL below */
+			/* Example using online image: 
+			background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80'); */
+			background-size: cover;
+			background-position: center;
+			border: 5px solid black;
+			border-radius: 10px;
+			margin: 20px;
+			padding: 30px;
+			text-align: center;
+			color: black;
+			position: relative;
+			overflow: hidden;
+		}
+
+		header::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background-color: rgba(255, 223, 211, 0.8); /* Overlay for text readability */
+			border-radius: 10px;
+			z-index: 0;
+		}
+
+		header h1,
+		header p {
+			position: relative;
+			z-index: 1;
+		}
+
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 20px;
+			padding: 20px;
+		}
+
+		.card {
+			background-color: var(--box-bg);
+			border: 2px solid black;
+			border-radius: 20px;
+			width: 300px;
+			text-align: center;
+			padding: 20px;
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+		}
+
+		.card img {
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+			margin-bottom: 15px;
+		}
+
+		.card a {
+			display: inline-block;
+			margin-top: 10px;
+			text-decoration: none;
+			color: #333;
+			font-weight: bold;
+			background-color: var(--accent-color);
+			padding: 8px 15px;
+			border-radius: 8px;
+			transition: background-color 0.3s;
+		}
+
+		.card a:hover {
+			background-color: #ff9e9e;
+		}
+
+		footer {
+			background-color: var(--header-bg);
+			border-top: 3px solid black;
+			text-align: center;
+			padding: 15px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Home Page</h1>
+		<p>This is the home page of Lucky Jan's Portfolio</p>
+		<p>Student of BSIT-GD 1st Year.</p>
+	</header>
+
+	<main>
+		<div class="card">
+			<img src="infoo.jpg" alt="Personal Info">
+			<a href="matre_personal.html">Personal Information</a>
+		</div>
+
+		<div class="card">
+			<img src="skills.jpg" alt="Skills">
+			<a href="matre_skills&training.html">Skills & Training</a>
+		</div>
+
+		<div class="card">
+			<img src="education.jpg" alt="Education">
+			<a href="matre_educ.html">Educational Background</a>
+		</div>
+
+		<div class="card">
+			<img src="photogallery.jpg" alt="Photo Gallery">
+			<a href="matre_photogallery.html">Photo Gallery</a>
+		</div>
+
+		<div class="card">
+			<img src="project.jpg" alt="Project">
+			<a href="matre_project.html">Project</a>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; Lucky Jan 2024</p>
+	</footer>
+</body>
+</html>
